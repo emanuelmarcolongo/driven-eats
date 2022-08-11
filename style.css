@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap');
 
 body {
-    background-color: palegoldenrod;
-    margin: 0 auto;
+    background-color: #E5E5E5;
+    margin: 120px 0px 0px 0px;
 }
 
 h1, .titulo {
@@ -42,10 +42,11 @@ p, h2 {
     margin-left: 21px;
 }
 .conteudo {
+    background-color: #E5E5E5;
     width: 395px;
-    overflow-x: scroll;
     margin-top: 92px; 
     margin-left: 19px;
+    margin-bottom: 108px;
 }
 
 .titulo {
@@ -59,10 +60,9 @@ p, h2 {
 .pratos {
     display: flex;
     align-items: center;
-    background-color: red;
+    background-color: #E5E5E5;
     box-sizing: border-box;
-    
-    
+    overflow-x: scroll;  
 }
 
 .prato {
@@ -71,15 +71,67 @@ p, h2 {
     background-color: white;
     border-radius: 9px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    margin-left: 17px;
-    padding: 18px 14px 14px 13px;
+    margin-right: 17px;
     flex-shrink: 0;
-
-    
 }
 
 .prato img {
     width: 144px;
     height: 87px;
     border-radius: 4px;
+    margin: 18px 14px 8px 14px;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-family: 'roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.prato p {
+    font-weight: 300;
+    font-size: 15px;
+    color: #a6a6a6;
+    margin-bottom: 5px;
+}
+
+.prato .texto {
+    margin-left: 14px;
+}
+
+footer {
+    background-color: white;
+    width: 414px; 
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer div {
+    background-color: #cbcbcb;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-justify: auto;
 }

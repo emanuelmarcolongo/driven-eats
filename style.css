@@ -4,6 +4,7 @@
 body {
     background-color: #E5E5E5;
     margin: 120px 0px 0px 0px;
+    box-sizing: border-box;
 }
 
 h1, .titulo {
@@ -57,15 +58,16 @@ p, h2 {
     color: #333;
 }
 
-.pratos {
+.pratos, .sobremesas, .bebidas {
     display: flex;
     align-items: center;
     background-color: #E5E5E5;
     box-sizing: border-box;
     overflow-x: scroll;  
+ 
 }
 
-.prato {
+.prato, .prato1, .prato2, .prato3 {
     width: 172px;
     height: 216px;
     background-color: white;
@@ -75,7 +77,7 @@ p, h2 {
     flex-shrink: 0;
 }
 
-.prato img {
+img {
     width: 144px;
     height: 87px;
     border-radius: 4px;
@@ -97,14 +99,14 @@ h4 {
     color: #000;
 }
 
-.prato p {
+.prato p, .prato1 p,.prato2 p, .prato3 p  {
     font-weight: 300;
     font-size: 15px;
     color: #a6a6a6;
     margin-bottom: 5px;
 }
 
-.prato .texto {
+.texto {
     margin-left: 14px;
 }
 
@@ -134,4 +136,28 @@ footer div {
     color: #fff;
     text-align: center;
     text-justify: auto;
+}
+
+footer button {
+    background-color: #32B72F;
+    width: 364px;
+    height: 61px;
+    border: 0px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.selecionado, .selecionado1, .selecionado2 {
+    border: 5px solid #32B72F;
+}
+
+
+.escondido {
+    display: none;
 }

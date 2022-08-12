@@ -21,130 +21,136 @@
     <div class="conteudo">
         <div class="titulo">Primeiro, seu prato</div>
         <div class="pratos">
-            <div class="prato">
-                <img src="assets/frangoassado.jpg"
-                    alt="">
+            <div class="prato" onclick="selecionarPrato('.prato');tudoPronto()">
+                <img src="assets/frangoassado.jpg" alt="">
                 <div class="texto">
                     <h3>Frango Assado</h3>
                     <p>Frango assado acompanhado de batata calabresa</p>
-                    <h4>R$ 25,50</h4>
+                    <h4>R$ <span>25.30</span></h4>
                 </div>
             </div>
-            <div class="prato">
-                <img src="assets/camarão.jpg"
-                    alt="">
+            <div class="prato1" onclick="selecionarPrato('.prato1');tudoPronto()">
+                <img src="assets/camarão.jpg" alt="">
                 <div class="texto">
                     <h3>Camarão na moranga</h3>
                     <p>Deliciosa receita caseira de camarão na moranga</p>
-                    <h4>R$ 37,50</h4>
+                    <h4>R$ <span>32.10</span></h4>
                 </div>
             </div>
-            <div class="prato">
-                <img src="assets/lasanha.jpg"
-                    alt="">
+            <div class="prato2" onclick="selecionarPrato('.prato2');tudoPronto()">
+                <img src="assets/lasanha.jpg" alt="">
                 <div class="texto">
                     <h3>Lasanha à bolonhesa</h3>
                     <p>Nossa incrível lasanha à bolonhesa para satisfazer sua fome</p>
-                    <h4>R$ 23,70</h4>
+                    <h4>R$ <span>23.70</span></h4>
                 </div>
             </div>
-            <div class="prato">
-                <img src="assets/Strogonoff-de-frango.jpg"
-                    alt="">
+            <div class="prato3" onclick="selecionarPrato('.prato3');tudoPronto()">
+                <img src="assets/Strogonoff-de-frango.jpg" alt="">
                 <div class="texto">
                     <h3>Strogonoff</h3>
                     <p>Strogonoff de frango acompanhado de arroz e batata palha</p>
-                    <h4>R$ 17,50</h4>
+                    <h4>R$ <span>17.50</span></h4>
                 </div>
             </div>
         </div>
         <div class="titulo">Agora, sua bebida</div>
-        <div class="pratos">
-            <div class="prato">
-                <img src="assets/refrigerante lata.jpg"
-                    alt="">
-                    <div class="texto"><h3>Refrigerante lata</h3>
-                        <p>Escolha entre as opções variadas de refrigerante.
-                            350ml
-                        </p>
-                        <h4>R$ 5,50</h4></div>
-                
+        <div class="bebidas">
+            <div class="prato bebida" onclick="selecionarBebida('.bebida');tudoPronto()">
+                <img src="assets/refrigerante lata.jpg" alt="">
+                <div class="texto">
+                    <h3>Refrigerante lata</h3>
+                    <p>Escolha entre as opções variadas de refrigerante.
+                        350ml
+                    </p>
+                    <h4>R$ <span>5.50</span></h4>
+                </div>
+
             </div>
-            <div class="prato">
-                <img src="assets/delvalle.jpg"
-                    alt="">
-                    <div class="texto"><h3>Suco Del Valle</h3>
-                        <p>Escolha entre sabores variados de suco del vale.
-                            350ml
-                        </p>
-                        <h4>R$ 6,50</h4></div>
-                
+            <div class="prato bebida1" onclick="selecionarBebida('.bebida1');tudoPronto()">
+                <img src="assets/delvalle.jpg" alt="">
+                <div class="texto">
+                    <h3>Suco Del Valle</h3>
+                    <p>Escolha entre sabores variados de suco del vale.
+                        350ml
+                    </p>
+                    <h4>R$ <span>7.10</span></h4>
+                </div>
+
             </div>
-            <div class="prato">
-                <img src="assets/suconatural.jpg"
-                    alt="">
-                    <div class="texto"><h3>Suco natural</h3>
-                        <p>Incrivel suco natural caseiro.
-                            Cerca de 300ml.
-                        </p>
-                        <h4>R$ 7,70</h4></div>
-                
+            <div class="prato bebida2" onclick="selecionarBebida('.bebida2');tudoPronto()">
+                <img src="assets/suconatural.jpg" alt="">
+                <div class="texto">
+                    <h3>Suco natural</h3>
+                    <p>Incrivel suco natural caseiro.
+                        Cerca de 300ml.
+                    </p>
+                    <h4>R$ <span>7.70</span></h4>
+                </div>
+
             </div>
-            <div class="prato">
-                <img src="assets/h2oh.webp"
-                    alt="">
-                    <div class="texto"><h3>H2OH!</h3>
-                        <p>Refrescante H2OH! saber limão. Garrafa com 500ml.</p>
-                        <h4>R$ 8,00</h4></div>
-                
+            <div class="prato bebida3" onclick="selecionarBebida('.bebida3');tudoPronto()">
+                <img src="assets/h2oh.webp" alt="">
+                <div class="texto">
+                    <h3>H2OH!</h3>
+                    <p>Refrescante H2OH! saber limão. Garrafa com 500ml.</p>
+                    <h4>R$ <span>8.00</span></h4>
+                </div>
+
             </div>
         </div>
         <div class="titulo">Por fim, sua sobremesa</div>
-        <div class="pratos">
-            <div class="prato">
-                <img src="assets/pudim.webp"
-                    alt="">
-                    <div class="texto"><h3>Pudim</h3>
-                        <p>Pudim de leite feito em casa com amor.
-                            Cerca de 200g
-                        </p>
-                        <h4>R$ 5,00</h4></div>
-                
+        <div class="sobremesas">
+            <div class="prato sobremesa" onclick="selecionarSobremesa('.sobremesa');tudoPronto()">
+                <img src="assets/pudim.webp" alt="">
+                <div class="texto">
+                    <h3>Pudim</h3>
+                    <p>Pudim de leite feito em casa com amor.
+                        Cerca de 200g
+                    </p>
+                    <h4>R$ <span>5.20</span></h4>
+                </div>
+
             </div>
-            <div class="prato">
-                <img src="assets/pave.webp"
-                    alt="">
-                    <div class="texto"><h3>Pavê de limão</h3>
-                        <p>Delicioso pedaço de pavê de limão com raspas.
-                            Cerca de 200g
-                        </p>
-                        <h4>R$ 7,20</h4></div>
-                
+            <div class="prato sobremesa1" onclick="selecionarSobremesa('.sobremesa1');tudoPronto()">
+                <img src="assets/pave.webp" alt="">
+                <div class="texto">
+                    <h3>Pavê de limão</h3>
+                    <p>Delicioso pedaço de pavê de limão com raspas.
+                        Cerca de 200g
+                    </p>
+                    <h4>R$ <span>7.20</span></h4>
+                </div>
+
             </div>
-            <div class="prato">
-                <img src="assets/cookie-classico-1024x576.jpg"
-                    alt="">
-                    <div class="texto"><h3>Cookies</h3>
-                        <p>Nosso delicioso cookie caseiro. Acompanha 3 unidades</p>
-                        <h4>R$ 6,90</h4></div>
-                
+            <div class="prato sobremesa2" onclick="selecionarSobremesa('.sobremesa2');tudoPronto()">
+                <img src="assets/cookie-classico-1024x576.jpg" alt="">
+                <div class="texto">
+                    <h3>Cookies</h3>
+                    <p>Nosso delicioso cookie caseiro. Acompanha 3 unidades</p>
+                    <h4>R$ <span>6.90</span></h4>
+                </div>
+
             </div>
-            <div class="prato">
-                <img src="assets/bolo.webp"
-                    alt="">
-                    <div class="texto"><h3>Bolo Red Velvet</h3>
-                        <p>Nosso incrivel bolo Red Velvet caseiro.
-                            Cerca de 250g </p>
-                        <h4>R$ 8,40</h4></div>
-                
+            <div class="prato sobremesa3" onclick="selecionarSobremesa('.sobremesa3');tudoPronto()">
+                <img src="assets/bolo.webp" alt="">
+                <div class="texto">
+                    <h3>Bolo Red Velvet</h3>
+                    <p>Nosso incrivel bolo Red Velvet caseiro.
+                        Cerca de 250g </p>
+                    <h4>R$ <span>8.40</span></h4>
+                </div>
+
             </div>
         </div>
     </div>
     <footer>
-        <div>
+        <div class="botaoselecione">
             Selecione os 3 itens<br> para fechar o pedido
+        </div>
+        <button class="botaofechar escondido" onclick="fecharPedido()">Fechar Pedido</button>
     </footer>
-    </div>
+
     <script src="script.js"></script>
 </body>
 

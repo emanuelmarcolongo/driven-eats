@@ -36,6 +36,7 @@ p, h2 {
     position: fixed;
     top: 0;
     left:0 ;
+    z-index: 1;
 }
 
 .titulotopo {
@@ -48,6 +49,7 @@ p, h2 {
     margin-top: 92px; 
     margin-left: 19px;
     margin-bottom: 108px;
+    z-index: -1;
 }
 
 .titulo {
@@ -72,7 +74,7 @@ p, h2 {
     height: 216px;
     background-color: white;
     border-radius: 9px;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-right: 17px;
     flex-shrink: 0;
 }
@@ -95,7 +97,7 @@ h3 {
 h4 {
     font-family: 'roboto';
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     color: #000;
 }
 
@@ -108,6 +110,20 @@ h4 {
 
 .texto {
     margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.botaoverde {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: -6px;
+    right: 5px;
+    display: none;
 }
 
 footer {
@@ -160,6 +176,10 @@ footer button {
 
 .escondido {
     display: none;
+}
+
+.mostrar, .mostrar1, .mostrar2 {
+    display: initial;
 }
 
 a {

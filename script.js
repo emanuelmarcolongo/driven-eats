@@ -78,10 +78,18 @@ function fecharPedido () {
     const pedidosobremesa = pedido2.innerHTML + "----" + "R$"+ Number(preço2.innerHTML);
     
     const pedidofinal = pedido.innerHTML + '//  '+ pedido1.innerHTML + '//  '+ pedido2.innerHTML;
-    const mensagemfinal = "Seu pedido é: " + pedidofinal;
     const totalpedido = Number(preço.innerHTML) + Number(preço1.innerHTML) + Number(preço2.innerHTML);
-    alert (mensagemfinal);
-    alert (totalpedido);
+    let totalpedido1 = totalpedido.toFixed(2);
+    const mensagemfinal = 
+    `Olá, gostaria de fazer o pedido:
+- Prato: ${pedido.innerHTML}
+- Bebida: ${pedido1.innerHTML}
+- Sobremesa: ${pedido2.innerHTML}
+Total: R$ ${totalpedido1}`
+    
+    const mensagemfinal1 = encodeURIComponent(mensagemfinal);
+    document.getElementById("mylink").href = `https://wa.me/5522998638785?text=${mensagemfinal1}`;
+    
 
 }
 // function fecharPedido () {

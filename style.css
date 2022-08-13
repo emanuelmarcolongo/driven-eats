@@ -161,3 +161,8 @@ footer button {
 .escondido {
     display: none;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
